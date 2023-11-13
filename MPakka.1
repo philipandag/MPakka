@@ -1,0 +1,48 @@
+.TH MPakka
+
+.SH NAME
+MPakka \- a script to archivize files using their extensions
+
+.SH SYNOPSIS
+.B MPakka
+.RI [ OPTIONS .\|.\|.]\&
+
+.SH DESCRIPTION
+.B MPakka
+sorts all the files in a directory into catalogues according to their extensions
+
+.SH OPTIONS
+.B -r 
+.br
+.RS
+searches for identical files using md5sums and offers to delete them leaving only one copy
+.RE
+
+.P
+.BI \-p " DIRECTORY"
+.RS
+.br
+specify a directory to launch the script in. By default it launches in current directory.
+.RE
+
+.P
+.BI \-d " DIRECTORY"
+.RS
+.br
+specify a directory where the archive will be created, by default it's the current directory
+.RE
+
+.P
+.BI \-f " NAME"
+.RS
+.br
+change the default name of created archive to anything you want
+.RE
+
+.P
+.BI \-e
+.RS
+.br
+compresses resulting archivized catalogue using tar
+.RE
+
